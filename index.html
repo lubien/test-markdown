@@ -1,0 +1,18 @@
+<html>
+  <head>
+    <title>Test Fetch Markdown files in gh-pages</title>
+  </head>
+  <body>
+    Don't mind me
+    <script>
+      fetch('./dumb.md')
+        .then(res => res.text())
+        .then(res => {
+          console.log(res);
+        })
+        .catch(err => {
+          throw err;
+        });
+    </script>
+  </body>
+</html>
